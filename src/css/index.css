@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+p,
+table,
+a,
+text-area,
+input,
+label,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Heebo', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
