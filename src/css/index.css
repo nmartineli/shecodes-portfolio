@@ -1,3 +1,5 @@
+/*Global CSS*/
+
 * {
   margin: 0;
   padding: 0;
@@ -38,11 +40,16 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Home */
+
+/* Home hero */
+
 .hero {
   background: rgba(220, 104, 60, 0.2);
 }
 
-.hero-content {
+.hero-content,
+.about-me-hero-content {
   display: flex;
   max-width: 1320px;
   margin: 0 auto;
@@ -55,7 +62,8 @@ h2 {
   margin-right: 25px;
 }
 
-.hero-text > h1 {
+.hero-text > h1,
+.about-me-hero-text > h1 {
   font-size: 52px;
   font-weight: 700;
 }
@@ -64,18 +72,20 @@ h2 {
   font-size: 25px;
   font-weight: 700;
 }
-.hero-text > p {
+
+.hero-text > p,
+.about-me-hero-text > p {
   font-size: 20px;
 }
 
-.hero-content > div > img {
-  width: 300px;
-  border-radius: 50%;
+.hero-content > div > img,
+.about-me-hero-content > div > img {
+  width: 400px;
+  border-radius: 10px;
   box-shadow: var(--box-shadow);
 }
 
-.hero-text > a,
-.inquiry-button > a {
+.button {
   display: inline-block;
   font-size: 20px;
   color: #fff;
@@ -87,11 +97,12 @@ h2 {
   transition: 0.3s ease-in-out;
 }
 
-.hero-text > a:hover,
-.inquiry-button > a:hover {
+.button:hover {
   color: #fff;
   filter: brightness(120%);
 }
+
+/* Featured Works */
 
 p {
   font-size: 22px;
@@ -133,10 +144,12 @@ p {
 }
 
 .work-details > p {
-  font-size: 19px;
+  font-size: 20px;
   line-height: 26px;
   margin-top: 15px;
 }
+
+/* Inquiry Banner */
 
 .inquiry {
   background-color: var(--light-color);
@@ -161,6 +174,8 @@ p {
   margin: 0;
 }
 
+/* Footer */
+
 footer {
   text-align: center;
   height: 100px;
@@ -179,24 +194,52 @@ footer > h2 {
   margin: 20px;
 }
 
+/*About me*/
+
+.about-me-hero-text {
+  flex-basis: 60%;
+  margin-right: 60px;
+}
+
+.about-me-hero-content {
+  padding: 100px 105px;
+  align-items: center;
+}
+
+.about-me-hero-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-me-hero-buttons > a {
+  margin-right: 20px;
+}
+
+.about-me-hero-text > p {
+  margin: 20px 0;
+}
+
 @media (max-width: 900px) {
-  .hero {
+  .hero,
+  .about-me-hero {
     text-align: center;
   }
-  .hero-content {
+  .hero-content,
+  .about-me-hero-content {
     width: 100%;
     margin: 0 auto;
     padding: 50px 50px;
     flex-direction: column-reverse;
     align-items: center;
   }
-  .hero-text {
+  .hero-text .about-me-hero-text {
     margin: 0;
   }
 
-  .hero-content > div > img {
-    width: 200px;
-    border-radius: 50%;
+  .hero-content > div > img,
+  .about-me-hero-content > div > img {
+    width: 350px;
+    border-radius: 10px;
     box-shadow: var(--box-shadow);
     margin-bottom: 20px;
   }
@@ -272,6 +315,16 @@ footer > h2 {
   }
   .inquiry-text {
     padding: 10px 0;
+    margin: 0;
+  }
+
+  .about-me-hero-buttons {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me-hero-text {
     margin: 0;
   }
 }
