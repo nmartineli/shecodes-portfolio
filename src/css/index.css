@@ -156,7 +156,8 @@ p {
   margin-top: 15px;
 }
 
-.featured-works-text-link {
+.featured-works-text-link,
+.contact-links {
   text-decoration: underline;
 }
 
