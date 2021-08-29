@@ -13,8 +13,12 @@
 }
 
 a {
+  color: var(--dark-color);
   text-decoration: none;
-  color: #fff;
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 ol,
@@ -39,6 +43,10 @@ h6 {
 h1,
 h2 {
   font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: var(--dark-color);
 }
 
 /* Home */
@@ -79,8 +87,7 @@ h2 {
   font-size: 20px;
 }
 
-.hero-content > div > img,
-.about-me-hero-content > div > img {
+.hero-img {
   width: 400px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
@@ -117,7 +124,7 @@ p {
   margin-bottom: 40px;
 }
 
-.featured-works > .work-image > img {
+.featured-works-img {
   max-width: 400px;
   height: auto;
   box-shadow: var(--box-shadow);
@@ -128,10 +135,9 @@ p {
   margin: 25px 0 0 25px;
 }
 
-.work-details > h3 {
+.work-details-title {
   font-weight: 700;
   font-size: 30px;
-  color: var(--dark-color);
 }
 
 .work-details > h4 {
@@ -144,10 +150,14 @@ p {
   border-radius: 25px;
 }
 
-.work-details > p {
+.featured-works-text {
   font-size: 20px;
   line-height: 26px;
   margin-top: 15px;
+}
+
+.featured-works-text-link {
+  text-decoration: underline;
 }
 
 /* Inquiry Banner */
@@ -189,6 +199,10 @@ i {
   font-size: 35px;
 }
 
+i:hover {
+  color: var(--primary-color);
+}
+
 footer > h2 {
   color: var(--dark-color);
   font-size: 22px;
@@ -218,6 +232,12 @@ footer > h2 {
 
 .about-me-hero-text > p {
   margin: 20px 0;
+}
+
+.work-title {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 60px 20px;
 }
 
 @media (max-width: 900px) {
@@ -271,15 +291,13 @@ footer > h2 {
     padding: 0;
   }
 
-  .featured-works > .work-image {
-    padding: 10px 20px;
-  }
-
-  .featured-works > .work-image > img {
+  .featured-works-img {
     max-width: 100%;
     height: auto;
-    box-shadow: var(--box-shadow);
-    border-radius: 10px;
+  }
+
+  .work-img {
+    padding: 10px 20px;
   }
 
   .work-details {
@@ -294,11 +312,6 @@ footer > h2 {
   }
 
   .work-details > h4 {
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 900;
-    color: #fff;
-    background-color: var(--dark-color);
     padding: 5px 10px;
     border-radius: 25px;
   }
@@ -327,5 +340,11 @@ footer > h2 {
 
   .about-me-hero-text {
     margin: 0;
+  }
+
+  .work-title {
+    font-size: 40px;
+    padding: 50px 10px;
+    text-align: center;
   }
 }
