@@ -25,20 +25,60 @@
     ></script>
   </head>
   <body>
-    <div class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h2>hi 👋 i’m</h2>
-          <h1>natalia martineli</h1>
-          <p>full stack web developer based in são paulo, brazil</p>
-          <a href="#" class="button">download resume</a>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand abs" href="/">
+            <img src="/src/images/logo.png" alt="logo natalia martineli"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/work.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact me</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <img
-            src="/src/images/natalia-martineli.jpg"
-            alt="natalia martineli"
-            class="img-fluid hero-img"
-          />
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>hi 👋 i’m</h2>
+            <h1>natalia martineli</h1>
+            <p>full stack web developer based in são paulo, brazil</p>
+            <a href="/src/natalia-martineli.pdf" class="button" target="_blank"
+              >download resume</a
+            >
+          </div>
+          <div>
+            <img
+              src="/src/images/natalia-martineli.jpg"
+              alt="natalia martineli"
+              class="img-fluid hero-img"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -115,7 +155,7 @@
             <p>do you need help with your project? we can work together!</p>
           </div>
           <div class="inquiry-button">
-            <a href="#" class="button"> let's talk </a>
+            <a href="/contact.html" class="button"> let's talk </a>
           </div>
         </div>
       </div>
