@@ -220,7 +220,7 @@ p {
 footer {
   text-align: center;
   height: 100px;
-  margin: 30px 0 60px 0;
+  margin: 30px 0 100px 0;
   padding: 30px 0;
 }
 
@@ -237,6 +237,11 @@ footer > h2 {
   color: var(--dark-color);
   font-size: 22px;
   margin: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin: 17px;
 }
 
 /*About me*/
@@ -263,9 +268,6 @@ footer > h2 {
   font-size: 50px;
   font-weight: bold;
   padding: 60px 20px;
-}
-
-@media (max-width: 500px) {
 }
 
 @media (max-width: 900px) {
